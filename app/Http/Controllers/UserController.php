@@ -15,7 +15,7 @@ class UserController extends Controller
 //        dd($id);
         $user=User::findOrFail($id);
         $count = Post::where('user_id', $id)->count();
-        $posts=Post::where('user_id', $id)->get();
+        $posts=Post::where('user_id', $id)->orderBy('posts.created_at', 'DESC')->get();
 
 
         return view('profile.profile',[

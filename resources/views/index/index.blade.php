@@ -13,7 +13,7 @@
                 @foreach($users as $user)
                 <div class="flex items-center m-2">
                     @if($user->profile_pic!==null)
-                        <img src="{{asset('profile_image').'/'.$user->profile_pic}}" alt="User Profile Picture" class="w-10 h-10 rounded-full">
+                        <img src="{{asset('profile_image').'/'.$user->profile_pic}}" alt="User Profile Picture" class="w-[50px] h-[50px] rounded-full">
                     @else
                         <img src="{{asset('profile_image').'/default.jpeg'}}" alt="User Profile Picture" class="w-10 h-10 rounded-full">
 
@@ -31,7 +31,7 @@
                     <div class="flex items-center">
 
                         @if(Auth::user()->profile_pic!==null)
-                            <img src="{{asset('profile_image').'/'.Auth::user()->profile_pic}}" alt="User Profile Picture" class="w-10 h-10 rounded-full">
+                            <img src="{{asset('profile_image').'/'.Auth::user()->profile_pic}}" alt="User Profile Picture" class="w-[55px] h-[55px] rounded-full">
                         @else
                             <img src="{{asset('profile_image').'/default.jpeg'}}" alt="User Profile Picture" class="w-10 h-10 rounded-full">
 
@@ -52,7 +52,7 @@
                 <div class="flex items-center justify-between mb-4">
                     <div class="flex items-center align-middle ">
                         @if($post->profile_pic!==null)
-                            <img src="{{asset('profile_image').'/'.$post->profile_pic}}" alt="User Profile Picture" class="w-10 h-10 rounded-full">
+                            <img src="{{asset('profile_image').'/'.$post->profile_pic}}" alt="User Profile Picture" class="w-[55px] h-[55px] rounded-full">
                         @else
                             <img src="{{asset('profile_image').'/default.jpeg'}}" alt="User Profile Picture" class="w-10 h-10 rounded-full">
 

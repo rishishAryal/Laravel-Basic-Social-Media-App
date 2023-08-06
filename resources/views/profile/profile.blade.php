@@ -33,7 +33,7 @@
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center align-middle">
                                 @if($user->profile_pic!==null)
-                                    <img src="{{asset('profile_image').'/'.$user->profile_pic}}" alt="User Profile Picture" class="w-10 h-10 rounded-full">
+                                    <img src="{{asset('profile_image').'/'.$user->profile_pic}}" alt="User Profile Picture" class="w-[55px] h-[55px] rounded-full">
                                 @else
                                     <img src="{{asset('profile_image').'/default.jpeg'}}" alt="User Profile Picture" class="w-10 h-10 rounded-full">
 
