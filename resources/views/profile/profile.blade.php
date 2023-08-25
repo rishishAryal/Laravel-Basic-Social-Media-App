@@ -24,6 +24,7 @@
                 <p class=" mt-3 text-red-600 text-center ">   {{$count}} posts  </p>
             @endif
             <!-- Add more sections as needed (e.g., photos, posts, etc.) -->
+            <a href="/" class="text-white p-2 bg-blue-600 rounded-lg ">Back</a>
         </div>
 
         <div class="overflow-scroll   h-[700px] mt-[50px]">

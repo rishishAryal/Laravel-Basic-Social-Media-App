@@ -7,7 +7,7 @@
                     @csrf
                     @method('PATCH')
                     <div>
-                        <label for="Bio" class="text-2xl font-bold text-gray-700 tracking-wide">Edit Bio</label>
+                        <label for="bio" class="text-2xl font-bold text-gray-700 tracking-wide">Edit Bio</label>
                         <textarea name="bio"  id="bio"
 
                                   class="w-full mt-4  text-lg py-2 border border-gray-300 focus:outline-none focus:border-indigo-500"

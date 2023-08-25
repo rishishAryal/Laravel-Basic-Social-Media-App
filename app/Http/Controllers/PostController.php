@@ -32,7 +32,7 @@ class PostController extends Controller
     public function store(){
 
        $attributes =  request()->validate([
-           'post_caption'=>'',
+           'post_caption'=>'max:5000',
            'post_image'=>'mimes:jpg,png,jpeg|max:50480|unique:posts,post_image'
 
        ]);
